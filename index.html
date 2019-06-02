@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Crushed" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>GifTunes</title>
+</head>
+
+<body background="assets/images/giftunesbackground.jpg">
+    <audio id="myAudio"><source src="./assets/audio/Tiny Button Push-SoundBible.com-513260752.mp3" type="audio/mpeg"></audio>    
+        
+        <!-- <div class="modal" id="my-modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Welcome to GifTunes</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                        <p>Are you feeling a certain way and you want to share it with someone?</p>
+                        <p>Send a text mesage by just picking a Gif, a Tune and send</p>
+                        </div>
+                    </div>
+                </div>
+            </div>     -->
+
+    <div class="header">
+        <img class="logo" src="assets/images/gtlogo.png" alt="Giftunes">
+        <p></p>
+    </div>
+          
+        <ul>
+            <li><a class="about" href="index2.html">About us</a></li>
+        </ul>
+       
+    <!-- MOOD BUTTON AREA-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-11" style="background-color: none;">
+                <div class="wrapper" id="buttons-area">
+                    <button class="buttons-mood" id="happy-button">Happy</button>
+                    <button class="buttons-mood" id="angry-button">Angry</button>
+                    <button class="buttons-mood" id="funny-button">Funny</button>
+                    <button class="buttons-mood" id="nervous-button">Nervous</button>
+                    <button class="buttons-mood" id="romantic-button">Romantic</button>
+                    <button class="buttons-mood" id="sad-button">Sad</button>
+                    <button class="buttons-mood" id="relax-button">Relax</button>
+                    <button class="buttons-mood" id="crazy-button">Crazy</button>
+                    <button class="buttons-mood" id="confused-button">Confused</button>
+                    <button class="buttons-mood" id="tired-button">Tired</button>
+                </div>
+        </div>
+    </div>
+
+    <div class="row output-area">
+        <!-- GIF LEFT COLUMN -->
+        <div class="col-5" class id="gif-area" style="background-color:rgba(255, 255, 255);">
+
+            <div class="row" id="gif-row"></div>
+            <div class="row" id="gif-row"></div>
+            <div class="row" id="gif-row"></div>
+        </div>
+
+        <!-- MUSIC RIGHT COLUMN -->
+        <div class="col-5" id="music-area" style="background-color:rgba(255, 255, 255);">
+        </div>
+    </div>
+</div>
+     
+<!--Original Share Form-->
+    <div id="sharing">
+    <button class="share-button">Share</button>
+    <div id="share-area">
+        <div class="col-12" style="background-color: rgb(255, 253, 253);">
+            <form class="form-inline">
+                <h3>Send a Text</h3>
+                <input id="sender-name" class="form-control mr-sm-2" type="text" placeholder="Your Name"
+                    aria-label="sender's Name">
+                <input id="recipient-phone" class="form-control mr-sm-2" type="tel"
+                    placeholder="recipient's phone number" aria-label="recipient's phone number">
+                <textarea rows="5" cols="40" name="message" id="message"></textarea>
+                <button id="send-text-button" class="btn btn-outline-success my-2 my-sm-4" type="submit">Send</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="spinner">
+         <div class="rect1"></div>
+         <div class="rect2"></div>
+         <div class="rect3"></div>
+         <div class="rect4"></div>
+         <div class="rect5"></div>
+    </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer"> Copyright&copy; 2019 Knights of the Round Table </footer>
+
+    <!-- JQuery link -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+
+    <!-- JS link -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/handle-clicks.js"></script>
+
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+
+</body>
+</html>
