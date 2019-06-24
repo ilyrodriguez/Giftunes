@@ -8,6 +8,7 @@
 
 ### You can now send a text message to that person you want to share your emotions with...
 # GifTunes #
+*-Please open our website with Firefox, it works best with CORS Everywhere Allowed enabled.-*
 https://the-knights-of-the-round-table.github.io/GifTunes/
 
 Click on the mood button of your choice select a Gif and a Tune and click the Share button to input your name, phone number and message, then send away! 
@@ -16,7 +17,6 @@ Click on the mood button of your choice select a Gif and a Tune and click the Sh
 
 
 
-*-Please open our website with Firefox, it works best with CORS Everywhere Allowed enabled.-*
 
 
 
